@@ -1,0 +1,233 @@
+.btn {
+  font-weight: 600;
+  border: 2px solid #1d1d1f;
+  border-radius: 7rem;
+  padding: 1.7rem 3.7rem;
+  transition: 0.5s all;
+  animation: opacity 6s 1;
+  margin-bottom: 3rem;
+}
+.btn:hover {
+  transform: translateY(-4px);
+  background: #1d1d1f;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.btn-copy {
+  font-size: 13px;
+  margin-bottom: 8rem;
+}
+
+.title {
+  margin-bottom: 6rem;
+  font-weight: 700;
+  animation: toDown 2s 1;
+  color: white;
+  background: rgb(0, 122, 255);
+  display: inline-block;
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.5s all;
+}
+.title:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.line {
+  width: 100%;
+  border-bottom: 5px solid red;
+  margin-top: 5px;
+}
+
+@font-face {
+  font-family: "SF";
+  src: url("/fonts/font/SFUIDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF";
+  src: url("/fonts/font/SFUIDisplay-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF";
+  src: url("/fonts/font/SFUIDisplay-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  font-family: "SF", "Ubuntu";
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: #1d1d1f;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 44.2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main__title {
+  margin-top: 10rem;
+  margin-bottom: 6rem;
+  font-weight: 700;
+  animation: toDown 2s 1;
+  color: white;
+  background: rgb(0, 122, 255);
+  display: inline-block;
+  padding: 25px;
+  border-radius: 15px 15px 0 15px;
+  transition: 0.5s all;
+}
+.main__title:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.main-text {
+  margin-bottom: 8rem;
+  background: rgb(225, 223, 229);
+  padding: 25px;
+  border-radius: 15px 15px 15px 0;
+  animation: opacity 4s 1;
+  display: inline-block;
+  transition: 0.5s all;
+}
+.main-text:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.main-text__p {
+  font-weight: 600;
+  color: rgb(37, 37, 39);
+  font-size: 2rem;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes toDown {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.section-tasks {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.section-tasks__task {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: 0.5s all;
+}
+.section-tasks__task:last-child {
+  margin-bottom: 70px;
+}
+.section-tasks__task:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.first {
+  background: rgb(0, 122, 255);
+}
+.first-name, .first-price {
+  color: white;
+  font-weight: 500;
+}
+
+.second {
+  background: rgb(225, 223, 229);
+}
+.second-name, .second-price {
+  color: rgb(37, 37, 39);
+  font-weight: 500;
+}
+
+.new-task {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.section-add {
+  padding-top: 5rem;
+}
+.section-add__inputs {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 10rem;
+}
+.section-add__inputs-input {
+  background: rgb(225, 223, 229);
+  padding: 15px;
+  width: 95%;
+  margin-left: 2.5%;
+  border-radius: 15px;
+  color: rgb(37, 37, 39);
+  font-size: 2rem;
+}
+
+.section-created {
+  padding-top: 7rem;
+}
+.section-created__price {
+  font-weight: 700;
+  font-size: 6rem;
+}
+.section-created__price-shadow {
+  transform: scale(1, -1) translateY(30px);
+  color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 7rem;
+}
+
+.section-pay {
+  padding-top: 7rem;
+}
+.section-pay__text {
+  margin-bottom: 8rem;
+  background: rgb(225, 223, 229);
+  padding: 25px;
+  border-radius: 15px;
+  animation: opacity 4s 1;
+  display: inline-block;
+  transition: 0.5s all;
+}
+.section-pay__text:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.section-pay__text-p {
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgb(37, 37, 39);
+}
+.section-pay__link {
+  margin-bottom: 1rem;
+}
+.section-pay__link > a {
+  color: rgb(0, 122, 255);
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */
