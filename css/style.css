@@ -102,8 +102,8 @@ section {
 .main-text {
   margin-bottom: 8rem;
   background: rgb(225, 223, 229);
-  padding: 25px;
-  border-radius: 15px 15px 15px 0;
+  padding: 2.5rem;
+  border-radius: 1.5rem 1.5rem 1.5rem 0;
   animation: opacity 4s 1;
   display: inline-block;
   transition: 0.5s all;
@@ -130,7 +130,7 @@ section {
 }
 @keyframes toDown {
   from {
-    transform: translateY(-200px);
+    transform: translateY(-20rem);
   }
   to {
     transform: translateY(0);
@@ -144,16 +144,16 @@ section {
 .section-tasks__task {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
-  border-radius: 6px;
-  margin-bottom: 10px;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
   transition: 0.5s all;
 }
 .section-tasks__task:last-child {
-  margin-bottom: 70px;
+  margin-bottom: 7rem;
 }
 .section-tasks__task:hover {
-  transform: translateY(-5px);
+  transform: translateY(-0.5rem);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
@@ -190,10 +190,10 @@ section {
 }
 .section-add__inputs-input {
   background: rgb(225, 223, 229);
-  padding: 15px;
+  padding: 1.5rem;
   width: 95%;
   margin-left: 2.5%;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   color: rgb(37, 37, 39);
   font-size: 2rem;
 }
