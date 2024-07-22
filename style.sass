@@ -167,3 +167,69 @@ html
 		& > a
 			color: rgb(0, 122, 255)
 			font-size: 16px
+
+.section-new-tasks
+	padding-top: 5rem
+.task
+	border-radius: 1rem
+	margin-top: 2rem
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 80%
+	margin-left: 10%
+	background: rgb(211, 211, 211)
+	padding: 1rem 0
+	transition: .5s all
+	margin-bottom: 5rem
+	&:hover
+		transform: translateY(-10px)
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px
+	&__img
+		border-radius: 1rem
+		overflow: hidden
+		margin-bottom: 2rem
+	&-info
+		display: flex
+		justify-content: space-between
+		gap: 6rem
+		&__text
+			text-align: left
+			font-size: 2rem
+			color: rgb(37, 37, 39)
+			font-weight: 600
+		&__reactions-reaction
+			padding: 1rem
+			border-radius: 50%
+			width: 40px
+			height: 40px
+			transition: .5s all
+			&:hover
+				transform: scale(1.1)
+				
+.like
+	background: green
+.dislike
+	background: red
+
+.buttons 
+	display: contents
+	width: 80%
+
+	
+	&__btn
+
+		background: rgb(0, 122, 255)
+		color: #ffffff
+		border: none
+		padding: 10px 20px
+		font-size: 16px
+		cursor: pointer
+		border-radius: 5px
+
+
+		&:hover
+			background: rgb(225, 223, 229)
+			color: rgb(37, 37, 39)
+
+
