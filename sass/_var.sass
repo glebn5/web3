@@ -1,0 +1,30 @@
+$blue: rgb(0,122,255)
+$gray: rgb(225, 223, 229)
+$dark: rgb(37, 37, 39)
+$bg: #eeeeee82
+
+@mixin hover
+	transition: .5s all
+	&:hover
+		transform: translateY(-1rem)
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+		@content
+
+@mixin btn
+	&__btn
+		display: inline-block
+		border-radius: 1rem
+		padding: 1.5rem 3rem
+		text-decoration: none
+		color: $dark
+		background: $gray
+		font-size: 2.5rem
+		margin-top: 10rem
+		transition: .5s all
+		text-transform: uppercase
+		@include hover
+			color: white
+			background: $blue
+		&:active
+			transform: translateY(-.5rem)
+		@content

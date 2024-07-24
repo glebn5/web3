@@ -3,132 +3,86 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/reset.css">
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-	<title>web3</title>
+	<title>Title</title>
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-	<div class="container">
-		<main class="main">
-			<h1 class="main__title">ВЫПОЛНЯЙ ЗАДАНИЯ<br>И ЗАРАБАТЫВАЙ</h1>
-			<div class="main-text">
-				<p class="main-text__p">ПРОСТЫЕ ЗАДАНИЯ</p>
-				<p class="main-text__p">МОМЕНТАЛЬНАЯ ОПЛАТА</p>
-				<p class="main-text__p">ЛИЧНОСТНЫЙ РОСТ</p>
+	<div class="flex">
+		<section class="start">
+			<h1 class="start__title">Выполняй задания<br>и зарабатывай</h1>
+			<div class="start__text">
+				<p class="start__text-p">Простые задания</p>
+				<p class="start__text-p">Моментальная оплата</p>
+				<p class="start__text-p">Личностный рост</p>
 			</div>
-			<button class="btn">начать</button>
-		</main>
-		 
-		<section class="section-tasks">
-			<div class="tasks">
-				<div class="section-tasks__task first">
-					<p class="section-tasks__task-name first-name">Задание</h2>
-					<p class="section-tasks__task-price first-price">0.5 TOn</p>
-				</div>
-				<div class="section-tasks__task second">
-					<p class="section-tasks__task-name second-name">Задание</h2>
-					<p class="section-tasks__task-price second-price">0.5 TOn</p>
-				</div>
-				<div class="section-tasks__task first">
-					<p class="section-tasks__task-name first-name">Задание</h2>
-					<p class="section-tasks__task-price first-price">0.5 TOn</p>
-				</div>
-				<div class="section-tasks__task second">
-					<p class="section-tasks__task-name second-name">Задание</h2>
-					<p class="section-tasks__task-price second-price">0.5 TOn</p>
-				</div>
-				<div class="section-tasks__task first">
-					<p class="section-tasks__task-name first-name">Задание</h2>
-					<p class="section-tasks__task-price first-price">0.5 TOn</p>
-				</div>
-				<div class="section-tasks__task second">
-					<p class="section-tasks__task-name second-name">Задание</h2>
-					<p class="section-tasks__task-price second-price">0.5 TOn</p>
-				</div>
-				<div class="section-tasks__task first">
-					<p class="section-tasks__task-name first-name">Задание</h2>
-					<p class="section-tasks__task-price first-price">0.5 TOn</p>
-				</div>
-				<div class="section-tasks__task second">
-					<p class="section-tasks__task-name second-name">Задание</h2>
-					<p class="section-tasks__task-price second-price">0.5 TOn</p>
-				</div>
-			
-			</div>
-			<div class="btn new-task">Добавить задание</div>
+			<a class="start__btn btn-white btn-animated " href="#">Начать</a>
+			<h2 class="desc">стартовый экран</h2>
 		</section>
-		 
-		<section class="section-add">
-			<h2 class="title">добавить новое задание</h2>
-			<div class="section-add__inputs">
-				<input type="text" class="section-add__inputs-input" placeholder="название">
-				<input type="text" class="section-add__inputs-input" placeholder="описание">
-				<input type="text" class="section-add__inputs-input" placeholder="цена">
-			</div>
-			<button class="btn">добавить</button>
-		</section>
-		 
-		<section class="section-created">
-			<h2 class="title">добавить новое задание</h2>
-			<p class="section-created__price">1 ton</p>
-			<p class="section-created__price section-created__price-shadow">1 ton</p>
-			<button class="btn">поделиться с друзьями</button>
-			<button class="btn">оплатить и разместить</button>
-		</section>
-		 
-		<section class="section-pay">
-			<h2 class="title">добавить новое задание</h2>
-			<div class="section-pay__text">
-				<p class="section-pay__text-p">переведи 1 тон</p>
-				<p class="section-pay__text-p">на кошелек</p>
-			</div>
-			<p class="section-pay__link"><a href="#">1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</a></p>
-			<button class="btn btn-copy">Копировать адресс</button>
-			<button class="btn">проверить оплату</button>
-		</section>
-		 
-		<section class="section-new-tasks">
-			<div class="task">
-				<div class="task__img">
-					<img src="img/img.png" alt="ПИКЧА">
+		<section class="tasks">
+			<div class="tasks-wrapper">
+				<div class="tasks-wrapper__task">
+					<h2 class="tasks-wrapper__task-name">Название</h2>
+					<h2 class="tasks-wrapper__task-price">Цена TON</h2>
 				</div>
-				<div class="task-info">
-					<div class="task-info__text">
-						<h3>НАЗВАНИЕ ЗАДАЧИ</h3>
-						<h3>ОПИСАНИЕ</h3>
-					</div>
-					<div class="task-info__reactions">
-						<button class="task-info__reactions-reaction like"><img src="img/like.png" alt=""></button>
-						<button class="task-info__reactions-reaction dislike"><img src="img/dislike.png" alt=""></button>
-					</div>
+				<div class="tasks-wrapper__task">
+					<h2 class="tasks-wrapper__task-name">Название</h2>
+					<h2 class="tasks-wrapper__task-price">Цена TON</h2>
 				</div>
-				
-			</div>
-			<div class="task">
-				<div class="task__img">
-					<img src="img/img.png" alt="ПИКЧА">
+				<div class="tasks-wrapper__task">
+					<h2 class="tasks-wrapper__task-name">Название</h2>
+					<h2 class="tasks-wrapper__task-price">Цена TON</h2>
 				</div>
-				<div class="task-info">
-					<div class="task-info__text">
-						<h3>НАЗВАНИЕ ЗАДАЧИ</h3>
-						<h3>ОПИСАНИЕ</h3>
-					</div>
-					<div class="task-info__reactions">
-						<button class="task-info__reactions-reaction like"><img src="img/like.png" alt=""></button>
-						<button class="task-info__reactions-reaction dislike"><img src="img/dislike.png" alt=""></button>
-					</div>
+				<div class="tasks-wrapper__task">
+					<h2 class="tasks-wrapper__task-name">Название</h2>
+					<h2 class="tasks-wrapper__task-price">Цена TON</h2>
 				</div>
-				
+				<div class="tasks-wrapper__task">
+					<h2 class="tasks-wrapper__task-name">Название</h2>
+					<h2 class="tasks-wrapper__task-price">Цена TON</h2>
+				</div>
 			</div>
-			<div class="buttons">
-				<button class="buttons__btn">задачи</button>
-				<button class="buttons__btn">дополнительно</button>
-				<button class="buttons__btn">добавить</button>
-			</div>
+			<a href="#" class="tasks__btn">добавить задание</a>
+			<h2 class="desc">экран с тасками</h2>
 		</section>
-		 
+		<div class="task">
+			<div class="task__title">название таски</div>
+			<div class="task__text">
+				<p class="task__text-p">какой-то текст описания задачи какой-то текст описания задачи какой-то текст описания задачи какой-то текст описания задачи</p>
+			</div>
+			<p class="task__price">1 ton</p>
+			<p class="task__price task__price-shadow">1 ton</p>
+			<a href="" class="new-task__btn">выполнить задание</a>
+			<h2 class="desc">экран с таской</h2>
+		</div>
+		<section class="new-task">
+			<h2 class="new-task__title">добавить задание</h2>
+			<form class="new-task-form">
+				<input type="text" class="new-task-form__input" placeholder="Название">
+				<input type="text" class="new-task-form__input" placeholder="Описание">
+				<input type="text" class="new-task-form__input" placeholder="Цена">
+			</form>
+			<a href="" class="new-task__btn">добавить задание</a>
+			<h2 class="desc">экран добавление таски</h2>
+		</section> 
+		<section class="created">
+			<h2 class="created__title">добавить задание</h2>
+			<p class="created__price">1 ton</p>
+			<p class="created__price created__price-shadow">1 ton</p>
+			<a href="#" class="created__btn">подделиться с друзьями</a>
+			<a href="#" class="created__btn created__btn-second">оплатить и разместить</a>
+			<h2 class="desc">экран с созданным заданием</h2>
+		</section>
+		<section class="pay">
+			<h2 class="pay__title">оплата размещения</h2>
+			<div class="pay__text">
+				<p class="pay__text-p">переведи цена ton</p>
+				<p class="pay__text-p">на кошелек</p>
+			</div>
+			<p class="pay__link">1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</p>
+			<a href="#" class="created__btn">Проверить оплату</a>
+			<h2 class="desc">экран оплата размещения</h2>
+		</section>
+		
 	</div>
-	
 </body>
 </html>
