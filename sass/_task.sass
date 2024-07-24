@@ -1,0 +1,39 @@
+.task
+	min-width: 32.4rem
+	margin: 1rem
+	text-align: center
+	background: $bg
+	padding: 3rem
+	&__title
+		font-size: 3rem
+		text-transform: uppercase
+		font-weight: 700
+		background: $blue
+		color: white
+		display: inline-block
+		padding: 2rem
+		border-radius: 2rem
+		margin-top: 3rem
+		@include hover
+	&__text
+		margin-top: 8rem
+		margin-bottom: 7rem
+		font-size: 2rem
+		color: $dark
+		background: $gray
+		display: inline-block
+		padding: 2rem 3rem
+		border-radius: 2rem
+		text-transform: uppercase
+		@include hover
+		&-p
+			font-weight: 500
+			&:not(:last-child)
+				margin-bottom: 2rem
+	&__price
+		font-weight: 700
+		font-size: 6rem
+		text-transform: uppercase
+		&-shadow
+			transform: scale(1,-1) translateY(3rem)
+			color: rgba(0,0,0,0.1)
