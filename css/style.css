@@ -20,7 +20,7 @@ html {
 }
 
 .start {
-  min-width: 42.5rem;
+  min-width: 32.4rem;
   margin: 1rem;
   text-align: center;
   background: rgba(238, 238, 238, 0.5098039216);
@@ -85,7 +85,7 @@ html {
 }
 
 .tasks {
-  min-width: 42.5rem;
+  min-width: 32.4rem;
   margin: 1rem;
   text-align: center;
   background: rgba(238, 238, 238, 0.5098039216);
@@ -142,7 +142,7 @@ html {
 }
 
 .task {
-  min-width: 42.5rem;
+  min-width: 32.4rem;
   margin: 1rem;
   text-align: center;
   background: rgba(238, 238, 238, 0.5098039216);
@@ -197,7 +197,7 @@ html {
 }
 
 .new-task {
-  min-width: 42.5rem;
+  min-width: 32.4rem;
   margin: 1rem;
   text-align: center;
   background: rgba(238, 238, 238, 0.5098039216);
@@ -272,7 +272,7 @@ html {
 }
 
 .created {
-  min-width: 42.5rem;
+  min-width: 32.4rem;
   margin: 1rem;
   text-align: center;
   background: rgba(238, 238, 238, 0.5098039216);
@@ -331,7 +331,7 @@ html {
 }
 
 .pay {
-  min-width: 42.5rem;
+  min-width: 32.4rem;
   margin: 1rem;
   text-align: center;
   background: rgba(238, 238, 238, 0.5098039216);
