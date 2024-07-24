@@ -376,7 +376,7 @@ html {
 }
 .pay__link {
   margin-top: 8rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .pay__link:hover {
   text-decoration: underline 0.2rem solid rgb(37, 37, 39);
