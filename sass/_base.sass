@@ -10,5 +10,13 @@ html
 	
 
 body
-	background: #EBECF0
-
+	&::before 
+		content: ''
+		position: fixed
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		z-index: -1
+		background: url('../bg.jpg') center / cover no-repeat
+		filter: blur(.3rem)

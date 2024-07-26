@@ -9,8 +9,16 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  background: #EBECF0;
+body::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background: url("../bg.jpg") center/cover no-repeat;
+  filter: blur(0.3rem);
 }
 
 @keyframes glowing {
@@ -26,49 +34,104 @@ body {
 }
 .start {
   text-align: center;
-  padding: 3rem;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 420px) {
+  .start {
+    padding: 3rem;
+  }
+}
 .start__title {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 700;
-  box-shadow: 8px 8px 12px -2px rgba(72, 79, 96, 0.4), -6px -6px 12px -1px white;
   border: 3px solid rgba(255, 255, 255, 0);
   transition: all 250ms ease-in-out;
   background-color: #EBECF0;
   display: inline-block;
   padding: 2rem;
   border-radius: 2rem;
-  margin-top: 8rem;
   transition: all 250ms ease-in-out;
+  position: relative;
+  box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5);
   border-color: rgba(255, 255, 255, 0);
 }
+@media (max-width: 530px) {
+  .start__title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 420px) {
+  .start__title {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+}
+.start__title::after {
+  content: "";
+  background: url("../ton.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 2rem;
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.3rem;
+}
+@media (max-width: 530px) {
+  .start__title::after {
+    width: 4rem;
+    height: 1.5rem;
+  }
+}
+@media (max-width: 420px) {
+  .start__title::after {
+    width: 3rem;
+    height: 1rem;
+  }
+}
 .start__title-text {
-  background: linear-gradient(45deg, #18407f 33%, #0D61BC 66%, #6e93cb);
+  background: linear-gradient(45deg, #2D83EC, #1AC9FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.start__title:hover {
-  box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5);
-}
 .start__text {
-  margin-top: 6rem;
-  font-size: 2.5rem;
+  margin-top: 4rem;
+  font-size: 2.3rem;
   color: #6C7587;
   font-weight: 500;
   background: #EBECF0;
   display: inline-block;
-  box-shadow: 8px 8px 12px -2px rgba(72, 79, 96, 0.4), -6px -6px 12px -1px white;
   padding: 2rem 3rem;
   border-radius: 2rem;
   text-transform: uppercase;
-}
-.start__text:hover {
   box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5);
-  border-color: rgba(255, 255, 255, 0);
+  border: 3px solid rgba(255, 255, 255, 0);
+  position: relative;
+}
+@media (max-width: 530px) {
+  .start__text {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 420px) {
+  .start__text {
+    font-size: 1.2rem;
+  }
+}
+.start__text::before {
+  content: "";
+  background: url("../ton_symbol.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 0.8rem;
+  top: 0.8rem;
 }
 .start__text-p {
   font-weight: 500;
@@ -76,12 +139,16 @@ body {
 .start__text-p:not(:last-child) {
   margin-bottom: 2rem;
 }
+@media (max-width: 420px) {
+  .start__text-p:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
 .start__btn {
-  margin-top: 4rem;
-  border-radius: 40px;
-  box-shadow: 8px 8px 12px -2px rgba(72, 79, 96, 0.4), -6px -6px 12px -1px white;
+  margin-top: 6rem;
+  border-radius: 4rem;
   color: #6C7587;
-  border: 3px solid rgba(255, 255, 255, 0);
+  border: 0.3rem solid rgba(255, 255, 255, 0);
   text-align: center;
   background-color: #EBECF0;
   transition: all 250ms ease-in-out;
@@ -90,6 +157,16 @@ body {
   text-decoration: none;
   position: relative;
   border-color: rgba(255, 255, 255, 0);
+}
+@media (max-width: 530px) {
+  .start__btn {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 420px) {
+  .start__btn {
+    font-size: 2rem;
+  }
 }
 .start__btn:hover {
   box-shadow: none;
@@ -100,7 +177,7 @@ body {
 }
 .start__btn::before {
   content: "";
-  background: linear-gradient(45deg, #18407f, #0D61BC, #6e93cb);
+  background: linear-gradient(45deg, #2D83EC, #1AC9FF);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -118,6 +195,17 @@ body {
   opacity: 0;
 }
 
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 .tasks {
   min-width: 32.4rem;
   margin: 1rem;
