@@ -263,7 +263,7 @@ body::before {
 }
 @media (max-width: 475px) {
   .tasks-wrapper__task-name, .tasks-wrapper__task-price {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 .tasks__btn {
@@ -729,42 +729,104 @@ body::before {
 }
 
 .pay {
-  min-width: 32.4rem;
-  margin: 1rem;
   text-align: center;
-  background: #EBECF0;
-  padding: 3rem;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 420px) {
+  .pay {
+    padding: 3rem;
+  }
 }
 .pay__title {
-  font-size: 2.5rem;
-  text-transform: uppercase;
+  font-size: 2.8rem;
   font-weight: 700;
-  background: rgb(0, 122, 255);
-  color: white;
+  border: 3px solid rgba(255, 255, 255, 0);
+  transition: all 250ms ease-in-out;
+  background-color: #EBECF0;
   display: inline-block;
   padding: 2rem;
   border-radius: 2rem;
-  margin-top: 3rem;
-  transition: 0.5s all;
+  transition: all 250ms ease-in-out;
+  position: relative;
+  box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5);
+  border-color: rgba(255, 255, 255, 0);
 }
-.pay__title:hover {
-  transform: translateY(-1rem);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+@media (max-width: 530px) {
+  .pay__title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 420px) {
+  .pay__title {
+    font-size: 1.5rem;
+  }
+}
+.pay__title::after {
+  content: "";
+  background: url("../ton.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 2rem;
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.3rem;
+}
+@media (max-width: 530px) {
+  .pay__title::after {
+    width: 4rem;
+    height: 1.5rem;
+  }
+}
+@media (max-width: 420px) {
+  .pay__title::after {
+    width: 3rem;
+    height: 1rem;
+  }
+}
+.pay__title-text {
+  background: linear-gradient(45deg, #2D83EC, #1AC9FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .pay__text {
-  margin-top: 6rem;
-  font-size: 2rem;
-  color: rgb(37, 37, 39);
-  background: rgb(225, 223, 229);
+  margin-top: 4rem;
+  font-size: 2.3rem;
+  color: #6C7587;
+  font-weight: 500;
+  background: #EBECF0;
   display: inline-block;
   padding: 2rem 3rem;
   border-radius: 2rem;
   text-transform: uppercase;
-  transition: 0.5s all;
+  box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5);
+  border: 3px solid rgba(255, 255, 255, 0);
+  position: relative;
 }
-.pay__text:hover {
-  transform: translateY(-1rem);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+@media (max-width: 530px) {
+  .pay__text {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 420px) {
+  .pay__text {
+    font-size: 1.2rem;
+  }
+}
+.pay__text::before {
+  content: "";
+  background: url("../ton_symbol.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 0.8rem;
+  bottom: 0.8rem;
 }
 .pay__text-p {
   font-weight: 500;
@@ -772,11 +834,77 @@ body::before {
 .pay__text-p:not(:last-child) {
   margin-bottom: 2rem;
 }
+@media (max-width: 420px) {
+  .pay__text-p:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
 .pay__link {
   margin-top: 8rem;
-  font-size: 1.5rem;
-}
-.pay__link:hover {
+  font-size: 2rem;
   text-decoration: underline 0.2rem solid rgb(37, 37, 39);
   -webkit-text-decoration: underline 0.2rem solid rgb(37, 37, 39);
+  word-break: break-all;
+}
+.pay__btn {
+  margin-top: 6rem;
+  border-radius: 4rem;
+  color: #6C7587;
+  border: 3px solid rgba(255, 255, 255, 0);
+  text-align: center;
+  background-color: #EBECF0;
+  transition: all 250ms ease-in-out;
+  padding: 1.5rem 4rem;
+  font-size: 3rem;
+  text-decoration: none;
+  position: relative;
+  border-color: rgba(255, 255, 255, 0);
+}
+@media (max-width: 530px) {
+  .pay__btn {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 420px) {
+  .pay__btn {
+    font-size: 2rem;
+  }
+}
+.pay__btn:hover {
+  box-shadow: none;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.pay__btn:active {
+  box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5);
+}
+.pay__btn::before {
+  content: "";
+  background: linear-gradient(45deg, #2D83EC, #1AC9FF);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  animation: glowing 20s linear infinite;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 40px;
+}
+.pay__btn:hover::before {
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,37 +1,100 @@
 .pay
-	min-width: 32.4rem
-	margin: 1rem
 	text-align: center
-	background: $bg
-	padding: 3rem
+	padding: 5rem
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+
+
+	@media (max-width: 420px)
+		padding: 3rem
+
 	&__title
-		font-size: 2.5rem
-		text-transform: uppercase
+		font-size: 2.8rem
 		font-weight: 700
-		background: $blue
-		color: white
+		border: 3px solid rgba(255, 255, 255, 0)
+		transition: all 250ms ease-in-out
+		background-color: #EBECF0
 		display: inline-block
 		padding: 2rem
 		border-radius: 2rem
-		margin-top: 3rem
-		@include hover
+		transition: all 250ms ease-in-out
+		position: relative
+		@media (max-width: 530px)
+			font-size: 2rem
+		@media (max-width: 420px)
+			font-size: 1.5rem
+
+		&::after
+			content: ""
+			background: url('../ton.png')
+			background-size: contain
+			background-repeat: no-repeat
+			width: 5rem
+			height: 2rem
+			position: absolute
+			right: .8rem
+			bottom: .3rem
+			@media (max-width: 530px)
+				width: 4rem
+				height: 1.5rem
+			@media (max-width: 420px)
+				width: 3rem
+				height: 1rem
+
+		&-text
+			background: linear-gradient(45deg, #2D83EC, #1AC9FF)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent
+
+		box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5)
+		border-color: rgba(255, 255, 255, 0)
 	&__text
-		margin-top: 6rem
-		font-size: 2rem
-		color: $dark
-		background: $gray
+		margin-top: 4rem
+		font-size: 2.3rem
+		color: #6C7587
+		font-weight: 500
+		background: #EBECF0
 		display: inline-block
 		padding: 2rem 3rem
 		border-radius: 2rem
 		text-transform: uppercase
-		@include hover
+		box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5)
+		border: 3px solid rgba(255, 255, 255, 0)
+		position: relative
+		@media (max-width: 530px)
+			font-size: 1.7rem
+		@media (max-width: 420px)
+			font-size: 1.2rem
+		&::before
+			content: ""
+			background: url('../ton_symbol.png')
+			background-size: contain
+			background-repeat: no-repeat
+			width: 3rem
+			height: 3rem
+			position: absolute
+			left: .8rem
+			bottom: .8rem
 		&-p
 			font-weight: 500
 			&:not(:last-child)
 				margin-bottom: 2rem
+				@media (max-width: 420px)
+					margin-bottom: 1rem
 	&__link
 		margin-top: 8rem
-		font-size: 1.5rem
-		&:hover
-			text-decoration: underline .2rem solid $dark
-			-webkit-text-decoration: underline .2rem solid $dark
+		font-size: 2rem
+		text-decoration: underline .2rem solid $dark
+		-webkit-text-decoration: underline .2rem solid $dark
+		word-break: break-all
+	@include button
+
+@keyframes glowing 
+	0%
+		background-position: 0 0 
+	50%
+		background-position: 400% 0 
+	100%
+		background-position: 0 0 
