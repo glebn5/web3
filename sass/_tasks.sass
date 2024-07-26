@@ -1,8 +1,10 @@
 .tasks
-	min-width: 32.4rem
-	margin: 1rem
 	text-align: center
-	background: $bg
+	padding: 5rem
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
 	padding: 3rem
 	&-wrapper
 		display: flex
@@ -12,16 +14,22 @@
 			display: flex
 			justify-content: space-between
 			align-items: center
-			color: white
+			column-gap: 14rem
+			color: #6C7587
 			padding: 1rem 2rem
-			background: $blue
-			border-radius: .7rem
+			background: #EBECF0
+			border-radius: 2rem
 			text-decoration: none
-			@include hover
-				color: $dark
-				background: $gray
+			box-shadow: 8px 8px 12px -2px rgba(72, 79, 96, 0.4), -6px -6px 12px -1px white
+			transition: all 250ms ease-in-out
+			&:hover
+				box-shadow: none
+			&:active
+				box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5)
+				border-color: rgba(255, 255, 255, 0)
+
 			&:not(:last-child)
 				margin-bottom: 2rem
 			&-name, &-price
 				font-size: 2.5rem
-	@include btn
+	@include button
