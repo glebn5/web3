@@ -154,7 +154,7 @@ body::before {
   margin-top: 6rem;
   border-radius: 4rem;
   color: #6C7587;
-  border: 0.3rem solid rgba(255, 255, 255, 0);
+  border: 3px solid rgba(255, 255, 255, 0);
   text-align: center;
   background-color: #EBECF0;
   transition: all 250ms ease-in-out;
@@ -238,14 +238,22 @@ body::before {
   border-radius: 2rem;
   text-decoration: none;
   box-shadow: 8px 8px 12px -2px rgba(72, 79, 96, 0.4), -6px -6px 12px -1px white;
+  border: 0.3rem solid rgba(255, 255, 255, 0);
   transition: all 250ms ease-in-out;
+}
+@media (max-width: 475px) {
+  .tasks-wrapper__task {
+    -moz-column-gap: 7rem;
+         column-gap: 7rem;
+  }
 }
 .tasks-wrapper__task:hover {
   box-shadow: none;
+  border: 0.3rem solid rgba(255, 255, 255, 0.5);
 }
 .tasks-wrapper__task:active {
   box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5);
-  border-color: rgba(255, 255, 255, 0);
+  border: 0.3rem solid rgba(255, 255, 255, 0);
 }
 .tasks-wrapper__task:not(:last-child) {
   margin-bottom: 2rem;
@@ -253,19 +261,34 @@ body::before {
 .tasks-wrapper__task-name, .tasks-wrapper__task-price {
   font-size: 2.5rem;
 }
+@media (max-width: 475px) {
+  .tasks-wrapper__task-name, .tasks-wrapper__task-price {
+    font-size: 1.8rem;
+  }
+}
 .tasks__btn {
-  margin-top: 60px;
-  border-radius: 40px;
+  margin-top: 6rem;
+  border-radius: 4rem;
   color: #6C7587;
   border: 3px solid rgba(255, 255, 255, 0);
   text-align: center;
   background-color: #EBECF0;
   transition: all 250ms ease-in-out;
-  padding: 15px 40px;
-  font-size: 30px;
+  padding: 1.5rem 4rem;
+  font-size: 3rem;
   text-decoration: none;
   position: relative;
   border-color: rgba(255, 255, 255, 0);
+}
+@media (max-width: 530px) {
+  .tasks__btn {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 420px) {
+  .tasks__btn {
+    font-size: 2rem;
+  }
 }
 .tasks__btn:hover {
   box-shadow: none;
