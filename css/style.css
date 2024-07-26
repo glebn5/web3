@@ -437,6 +437,56 @@ body::before {
   font-size: 6rem;
   text-transform: uppercase;
 }
+.task__btn {
+  margin-top: 6rem;
+  border-radius: 4rem;
+  color: #6C7587;
+  border: 3px solid rgba(255, 255, 255, 0);
+  text-align: center;
+  background-color: #EBECF0;
+  transition: all 250ms ease-in-out;
+  padding: 1.5rem 3rem;
+  font-size: 3rem;
+  text-decoration: none;
+  position: relative;
+  border-color: rgba(255, 255, 255, 0);
+}
+@media (max-width: 530px) {
+  .task__btn {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 420px) {
+  .task__btn {
+    font-size: 2rem;
+  }
+}
+.task__btn:hover {
+  box-shadow: none;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.task__btn:active {
+  box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5);
+}
+.task__btn::before {
+  content: "";
+  background: linear-gradient(45deg, #2D83EC, #1AC9FF);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  animation: glowing 20s linear infinite;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 40px;
+}
+.task__btn:hover::before {
+  opacity: 0;
+}
 
 .new-task {
   text-align: center;
