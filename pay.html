@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="script.js"></script>
 </head>
 <body>
 	<section class="pay">
@@ -15,7 +16,8 @@
 			<p class="pay__text-p">переведи цена ton</p>
 			<p class="pay__text-p">на кошелек</p>
 		</div>
-		<p class="pay__link">1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</p>
+		<p class="pay__link" id="pay__link">1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</p>
+		<button onclick="copytext('#pay__link')" class="pay__btn-copy">Копировать адресс</button>
 		<a href="created.html" class="pay__btn">Проверить оплату</a>
 	</section>
 </body>

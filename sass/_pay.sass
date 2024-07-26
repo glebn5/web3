@@ -21,7 +21,7 @@
 		border-radius: 2rem
 		transition: all 250ms ease-in-out
 		position: relative
-		@media (max-width: 530px)
+		@media (max-width: 550px)
 			font-size: 2rem
 		@media (max-width: 420px)
 			font-size: 1.5rem
@@ -36,7 +36,7 @@
 			position: absolute
 			right: .8rem
 			bottom: .3rem
-			@media (max-width: 530px)
+			@media (max-width: 550px)
 				width: 4rem
 				height: 1.5rem
 			@media (max-width: 420px)
@@ -63,7 +63,7 @@
 		box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5)
 		border: 3px solid rgba(255, 255, 255, 0)
 		position: relative
-		@media (max-width: 530px)
+		@media (max-width: 550px)
 			font-size: 1.7rem
 		@media (max-width: 420px)
 			font-size: 1.2rem
@@ -90,6 +90,44 @@
 		-webkit-text-decoration: underline .2rem solid $dark
 		word-break: break-all
 	@include button
+	&__btn-copy
+		margin-top: 6rem
+		border-radius: 4rem
+		color: #6C7587
+		border: 3px solid rgba(255, 255, 255, 0)
+		text-align: center
+		background-color: #EBECF0
+		transition: all 250ms ease-in-out
+		padding: 1.5rem 4rem
+		font-size: 3rem
+		position: relative
+		@media (max-width: 530px)
+			font-size: 2.1rem
+		@media (max-width: 420px)
+			font-size: 2rem
+		&:hover
+			box-shadow: none
+			border-color: rgba(255, 255, 255, 0.5)
+		&:active
+			box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5)
+		border-color: rgba(255, 255, 255, 0)
+		&::before 
+			content: ''
+			background: linear-gradient(45deg, #2D83EC, #1AC9FF)
+			position: absolute
+			top: -2px
+			left:-2px
+			background-size: 400%
+			z-index: -1
+			filter: blur(5px)
+			width: calc(100% + 10px)
+			height: calc(100% + 10px)
+			animation: glowing 20s linear infinite
+			opacity: 1
+			transition: opacity .3s ease-in-out
+			border-radius: 40px
+		&:hover::before
+			opacity: 0
 
 @keyframes glowing 
 	0%
