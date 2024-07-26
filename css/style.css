@@ -464,7 +464,7 @@ body::before {
 }
 @media (max-width: 420px) {
   .new-task-form__input {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 .new-task-form__input:not(:last-child) {
@@ -490,10 +490,10 @@ body::before {
 }
 @media (max-width: 420px) {
   .new-task-form__input::-moz-placeholder {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .new-task-form__input::placeholder {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 .new-task-form__input:focus {
