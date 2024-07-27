@@ -1,7 +1,22 @@
+const el = document.querySelector(".pay__link");
+const btn = document.querySelector(".pay__btn-copy")
+
 function copytext(el) {
-	var $tmp = $("<input>");
-	$("body").append($tmp);
-	$tmp.val($(el).text()).select();
+	const temp = document.createElement("textarea");
+	temp.value = el.textContent;
+
+	document.body.appendChild(temp);
+
+	temp.select();
+
 	document.execCommand("copy");
-	$tmp.remove();
+
+	document.body.removeChild(temp);
 }
+
+btn.addEventListener("click", () => {
+	copytext(el);
+})
+
+
+AOS.init();

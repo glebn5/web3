@@ -41,6 +41,7 @@ $bg: #EBECF0
 		font-size: 3rem
 		text-decoration: none
 		position: relative
+		z-index: 1
 		@media (max-width: 530px)
 			font-size: 2.1rem
 		@media (max-width: 420px)
@@ -58,7 +59,7 @@ $bg: #EBECF0
 			top: -2px
 			left:-2px
 			background-size: 400%
-			z-index: -1
+			z-index: 1
 			filter: blur(5px)
 			width: calc(100% + 10px)
 			height: calc(100% + 10px)
@@ -68,6 +69,7 @@ $bg: #EBECF0
 			border-radius: 40px
 		&:hover::before
 			opacity: 0
+			
 
 @keyframes glowing 
 	0%
