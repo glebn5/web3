@@ -11,6 +11,7 @@
 		padding: 3rem
 
 	&__title
+		animation: fadeInTop 1s
 		font-size: 2.8rem
 		font-weight: 700
 		border: 3px solid rgba(255, 255, 255, 0)
@@ -51,6 +52,8 @@
 		box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5)
 		border-color: rgba(255, 255, 255, 0)
 	&__text
+		opacity: 0
+		animation: fadeInTop 1s 1s forwards
 		margin-top: 4rem
 		font-size: 2.3rem
 		color: #6C7587
@@ -84,6 +87,8 @@
 				@media (max-width: 420px)
 					margin-bottom: 1rem
 	&__link
+		opacity: 0
+		animation: fadeInTop 1s 1s forwards
 		margin-top: 8rem
 		font-size: 2rem
 		text-decoration: underline .2rem solid $dark
@@ -91,6 +96,7 @@
 		word-break: break-all
 	@include button
 	&__btn-copy
+		opacity: 0
 		margin-top: 6rem
 		border-radius: 4rem
 		color: #6C7587
@@ -100,7 +106,10 @@
 		transition: all 250ms ease-in-out
 		padding: 1.5rem 4rem
 		font-size: 3rem
+		text-decoration: none
 		position: relative
+		animation: fadeTop 1s 2s forwards
+		box-shadow: #2D83EC 0px 12px 28px 0px, #2D83EC 0px 2px 4px 0px
 		@media (max-width: 530px)
 			font-size: 2.1rem
 		@media (max-width: 420px)
@@ -110,24 +119,7 @@
 			border-color: rgba(255, 255, 255, 0.5)
 		&:active
 			box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5)
-		border-color: rgba(255, 255, 255, 0)
-		&::before 
-			content: ''
-			background: linear-gradient(45deg, #2D83EC, #1AC9FF)
-			position: absolute
-			top: -2px
-			left:-2px
-			background-size: 400%
-			z-index: -1
-			filter: blur(5px)
-			width: calc(100% + 10px)
-			height: calc(100% + 10px)
-			animation: glowing 20s linear infinite
-			opacity: 1
-			transition: opacity .3s ease-in-out
-			border-radius: 40px
-		&:hover::before
-			opacity: 0
+			border-color: rgba(255, 255, 255, 0)
 
 @keyframes glowing 
 	0%
