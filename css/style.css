@@ -24,7 +24,7 @@ body::before {
   top: 0;
   bottom: 0;
   z-index: -1;
-  background: url("../bg.jpg") center/cover no-repeat;
+  background: url("../img/bg.jpg") center/cover no-repeat;
   filter: blur(0.3rem);
 }
 
@@ -85,7 +85,7 @@ body::before {
 }
 .start__title::after {
   content: "";
-  background: url("../ton.png");
+  background: url("../img/ton.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 5rem;
@@ -139,7 +139,7 @@ body::before {
 }
 .start__text::before {
   content: "";
-  background: url("../ton_symbol.png");
+  background: url("../img/ton_symbol.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 3rem;
@@ -335,7 +335,7 @@ body::before {
 }
 .task__title::after {
   content: "";
-  background: url("../ton.png");
+  background: url("../img/ton.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 5rem;
@@ -392,7 +392,7 @@ body::before {
 }
 .task__text::before {
   content: "";
-  background: url("../ton_symbol.png");
+  background: url("../img/ton_symbol.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 2rem;
@@ -496,7 +496,7 @@ body::before {
 }
 .new-task__title::after {
   content: "";
-  background: url("../ton.png");
+  background: url("../img/ton.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 5rem;
@@ -662,7 +662,7 @@ body::before {
 }
 .created__title::after {
   content: "";
-  background: url("../ton.png");
+  background: url("../img/ton.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 5rem;
@@ -769,7 +769,7 @@ body::before {
 }
 .pay__title::after {
   content: "";
-  background: url("../ton.png");
+  background: url("../img/ton.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 5rem;
@@ -823,7 +823,7 @@ body::before {
 }
 .pay__text::before {
   content: "";
-  background: url("../ton_symbol.png");
+  background: url("../img/ton_symbol.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 3rem;
@@ -919,16 +919,4 @@ body::before {
 .pay__btn-copy:active {
   box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5);
   border-color: rgba(255, 255, 255, 0);
-}
-
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
 }/*# sourceMappingURL=style.css.map */
